@@ -1,0 +1,66 @@
+.bg-nav{
+  background-color: #1c2422;
+}
+
+.txt-orange{
+  color: #e1892e;
+  font-size: 24px;
+}
+
+.txt-grey{
+  color:#DDDDDD;
+}
+
+.form-width{
+  max-width: 50%;
+}
+
+.bg-pumpkin{
+  background-image: url(https://s3-alpha-sig.figma.com/img/eccc/1683/afc8ded695bbcb2ee9bcc846453ef4e1?Expires=1634515200&Signature=bY100NiMFBO1lAJ9LcxZB2weuTigRA3icuQd64PgA6FdaUME81xEIpIu89HU43JSVml2gdhT7y00Xe0jhH8CkWQZzORVtUbf4Oe8FJxftDeGaWSn3OwlZZGwtqKQrSRleuTlvQKxAG6wVuooWrD-H5plLE4FKwPxYaVxawzkrmX5skPt-XZzpgpvl7Nlvlc7bLq8PmO6IFKsAOVztfwXPVmve7GQlYJmxkE58DoZfJv~V9OgpESfpVH-TZ44SqVi-Q9IVdjuSgl7O-LaT02KYV-W7YwNInTt~3JfDFP7OSyWYuo9440~VS4U2hjZrVhE9fpOpycw6YIKbFBuMlCtFg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-fill{
+  background-size:cover;
+  background-position: center;
+}
+
+.row>*{
+  flex-shrink: 1!important;
+}
+.pos-absolute{
+  position: absolute;
+  width: 50%;
+  right: 15em;
+  top:7em;
+}
+
+.font-style{
+  font-family: 'Roboto', sans-serif;
+}
+
+body { 
+  padding-top: 44px; 
+}
+
+.txt-shadow{
+  text-shadow: 1px 1px black;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /*card spills out of container over 768 px*/
+  .card-spill {
+    transform: translateY(35px)
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+ /*Hides text when over 768px */
+  .hide-txt {
+    display: none;
+  }
+
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <title>Site Clone</title>
+  <style>
+    /* This is for wire framing to see our rows/columns */
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+
+</head>
+
+<body class=" font-style">
+  <header class="container-fluid">
+    <div class="row bg-nav fixed-top">
+      <div class="col-md-12 text-white">
+        <h1><i class="mdi mdi-pumpkin mdi-spin mdi-md"></i>
+          Lorem, ipsum.
+        </h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-fluid bg-pumpkin">
+    <div class="row">
+      <div class="col-md-3 m-3 order-md-1 ">
+        <div class="mb-2 txt-shadow text-white ms-1">Subtle Heading</div>
+        <form class="border border-2 bg-white p-3 rounded">
+          <div class="form-group ">
+            <label class="txt-orange mb-2" for="exampleFormControlInput1"> LESS SUBTLE HEADING</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NAME">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1"> </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="EMAIL">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">
+
+            </label>
+            <div class="input-group mb-2">
+              <input type="text" class="form-control me-2" placeholder="Phone" aria-label="Phone">
+              <input type="text" class="form-control" placeholder="Ext." aria-label="Ext">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+      <div class="col-md-9 text-white pos-absolute mt hide-txt txt-shadow ">
+        <div class="border-start border-4 border-dark">
+          <h3 class="ms-3">TEXT OVER AN IMAGE</h3>
+          <h4 class="ms-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt delectus asperiores qui
+            minima
+            blanditiis vero.</h4>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container-fluid">
+    <div class="row bg-nav">
+      <div class="col-md-4 mt-4 ms-5 text-white ">
+        <div class="mb-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+        </div>
+        <div class="mb-4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing.
+        </div>
+        <div class="mb-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum exercitationem culpa, ratione pariatur ipsum,
+          delectus libero enim blanditiis, perferendis inventore numquam laudantium magnam officia mollitia obcaecati
+          eveniet. Fuga, ipsa quis.
+        </div>
+      </div>
+      <div class="col-md-8 card ms-5 mt-5 card-spill w-50 order-first order-md-2">
+        <ul class=" list-group list-group-flush">
+          <li class="list-group-item"> <i class="mdi mdi-wrench"></i>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde ducimus </li>
+          <li class="list-group-item"><i class="mdi mdi-car"></i>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde ducimus </li>
+          <li class="list-group-item"><i class="mdi mdi-phone"></i>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde ducimus </li>
+          <li class="list-group-item"><i class="mdi mdi-dots-vertical"></i>Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Unde ducimus </li>
+          <li class="list-group-item"><i class="mdi mdi-flash"></i>Lorem ipsum dolor sit amet
+            consectetur
+            adipisicing elit. Unde ducimus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <article class="container-fluid mt-5 pb-5">
+    <div class="row">
+      <div class="col-md text-center ">
+        <img class="img-fluid img-fill h-100 w-75"
+          src="https://s3-alpha-sig.figma.com/img/35bc/6def/7bd396c1a65fa634c74eed6e3d2ade22?Expires=1634515200&Signature=UDG1WzP8p-JejpSdOlWjaE8ZdK9m7gkwk-4fK76~LCcWp8z7q7IgEdAWCVzPGkJ6Z~fD~WG~S7RsiEyu5iEf6-iCx7hZl7j9JfnTe3vSKlTZ3B~1jamosciHEUdXhbW9kKcvWHpRMYcFur-DBuis~WmBdWJCM1qJLVgi6aKpopBAtkUmfPpePRItVSRD7qTSmFt2J8OQI99zSD5AVwm77zkXZAH-03X98qdL4VP8iQRyhoxDLe0B5i1QS~l3cspbxZ1mmSZO-5lDUUKR4r1GP0lph207iE~wFgKe3lDxsqoYgIQdGoREp1MebjisbaL4NzWSgvA1110TuDXLUvq6cA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+          alt="">
+
+      </div>
+      <div class="col-md me-4 ms-5 mt-3">
+        <h2>
+          <i class="mdi mdi-pumpkin "></i>
+          Lorem ipsum dolor sit amet
+        </h2>
+        <h3>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </h3>
+        <h4>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa perspiciatis provident cumque explicabo,
+          perferendis temporibus? Enim, inventore expedita!
+        </h4>
+        <div class="text-end me-5">
+
+          <button type="button" class="btn btn-sm w-20 btn-warning mt-2">More</button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <section class="container-fluid ">
+    <div class="row text-center mt-5 mb-5">
+      <div class="col-md-4 mt-5 mb-5 order-md-1 order-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 order-md-2 order-sm-1">
+        <div class="card h-100 ">
+          <div class="card-body align-center">
+            <h2 class="mdi mdi-star"><i class="mdi mdi-star"></i><i class="mdi mdi-star"></i></h2>
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mt-5 order-md-3 order-sm-3">
+        <div class="card ">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid bg-nav text-white">
+    <div class="row">
+      <div class="col m-5">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit rerum expedita, odit nulla dicta modi.</h4>
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col my-3 text-center txt-orange">
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius quis accusamus eum </h4>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
